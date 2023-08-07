@@ -11,21 +11,23 @@
 <?php
 // $a = "Jenovic";
 //  echo "Bonjour $a";
+include('../components/nav.php');
 ?>
 <section>
 <div class="container mt-5">
-<form>
+<form method="POST" action="../../controllers/formcontroller.php">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nom</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" name="nom" placeholder="ex Jenovic ..."  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text">Vas y hunnn écrit</div>
-  </div>
+    <button type="submit" class="btn btn-danger">Confirmer</button>
+   </div>
   <div class="mb-3">
   
 </form>
 </section>
 
-<button type="button" class="btn btn-primary"><a href="index.php">Liste</a></button>
+<button type="button" class="btn btn-primary"><a href="../../index.php">Liste</a></button>
 
 
 </body>
